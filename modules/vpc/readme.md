@@ -1,6 +1,6 @@
 Select region: us-east-1
-Create a vpc with an IPv4 CIDR block but does not have an IPv6 CIDR block
-Create an internet gateway and attach it the VPC.
+Create a vpc with an IPv4 CIDR block
+Create two internet gateway attach to the VPC.
 Create 02 availabillities zones:us-east-1a,us-east-1b
 Create two private subnets and two public sunets
 Allocate Elastic IPs for NAT Gateways
