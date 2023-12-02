@@ -5,7 +5,7 @@ metadata:
   labels:
     app: ca-app
 spec:
-  replicas: 2
+  replicas: 4
   # replicas: 15
   selector:
     matchLabels:

@@ -17,7 +17,8 @@ spec:
     spec:
       containers:
         - name: nodeport-app
-          image: devopseasylearning2021/canary-dev:236c2
+          # image: devopseasylearning2021/canary-dev:236c2
+          image: nginx
           imagePullPolicy: Always
           ports:
             - containerPort: 80

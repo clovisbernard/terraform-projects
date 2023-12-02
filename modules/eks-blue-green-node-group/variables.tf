@@ -18,7 +18,7 @@ variable "common_tags" {
 
 variable "eks_version" {
   type    = string
-  default = "1.24"
+  default = "1.28"
 }
 
 variable "node_min" {
@@ -59,7 +59,7 @@ variable "green" {
 variable "ec2_ssh_key" {
   type        = string
   description = "SSH key to connect to the node from bastion host"
-  default     = "key-1"
+  default     = "clo-key"
 }
 
 variable "deployment_nodegroup" {

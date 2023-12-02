@@ -1,11 +1,9 @@
 data "aws_vpc" "vpc" {
   filter {
     name   = "tag:Name"
-<<<<<<< HEAD
+
     values = ["2560-dev-alpha-vpc"]
-=======
-    values = ["2023-dev-alpha-vpc"]
->>>>>>> 9b730721f32a74618d015157f838e4483fd93fe2
+# >>>>>>> 9b730721f32a74618d015157f838e4483fd93fe2
   }
 }
 

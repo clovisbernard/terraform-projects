@@ -20,11 +20,11 @@ metadata:
     alb.ingress.kubernetes.io/unhealthy-threshold-count: '2'
     # SSH settings
     alb.ingress.kubernetes.io/listen-ports: '[{"HTTPS":443}, {"HTTP":80}]'
-    alb.ingress.kubernetes.io/certificate-arn: arn:aws:acm:us-east-1:410052665018:certificate/d6cf6240-9d5c-409b-9686-458b20c54497
+    alb.ingress.kubernetes.io/certificate-arn: arn:aws:acm:us-east-1:410052665018:certificate/069e2209-b93f-458f-b1b9-e9815eba93bb
     # SSL Redirect Setting (http to https) all http will be redirected to https
     alb.ingress.kubernetes.io/ssl-redirect: '443'
     # External dns settings
-    external-dns.alpha.kubernetes.io/hostname: app.tclovis.com, stg.tclovis.com
+    external-dns.alpha.kubernetes.io/hostname: app.tclovis.com, dev.tclovis.com
 
 spec:
     rules:

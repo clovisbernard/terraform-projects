@@ -5,7 +5,7 @@ metadata:
 spec: 
   accessModes:
     - ReadWriteOnce
-  storageClassName: ebs-sc
+  storageClassName: ebs-gp3-storage-class-create-by-terraform
   resources: 
     requests:
       storage: 4Gi

@@ -27,13 +27,13 @@ locals {
   desired_size         = "1"
   min_size             = "1"
   max_size             = "10"
-  ec2_ssh_key          = "key-1"
+  ec2_ssh_key          = "clo-key"
   ami_type             = "AL2_x86_64"
   capacity_type        = "ON_DEMAND"
   disk_size            = "20"
   force_update_version = false
   instance_types       = ["t2.medium", "t2.medium"]
-  eks-version          = "1.24"
+  eks-version          = "1.28"
   label_name           = "guru"
 
 
