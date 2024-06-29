@@ -18,7 +18,7 @@ metadata:
     alb.ingress.kubernetes.io/unhealthy-threshold-count: '2'
     alb.ingress.kubernetes.io/listen-ports: '[{"HTTPS":443}, {"HTTP":80}]'
     alb.ingress.kubernetes.io/ssl-redirect: '443'
-    external-dns.alpha.kubernetes.io/hostname: dev.devopseasylearning.net
+    external-dns.alpha.kubernetes.io/hostname: dev.tclovis.com
 spec:
   defaultBackend:
     service:
@@ -27,9 +27,9 @@ spec:
         number: 80
   tls:
   - hosts:
-    - "*.devopseasylearning.net"
+    - "*.tclovis.com"
   rules: 
-    - host: covid19.devopseasylearning.net
+    - host: covid19.tclovis.com
       http:
         paths:
           - path: /
@@ -39,7 +39,7 @@ spec:
                 name: covid19-nodeport-service
                 port: 
                   number: 80
-    - host: creative.devopseasylearning.net
+    - host: creative.tclovis.com
       http:
         paths:
           - path: /
@@ -49,7 +49,7 @@ spec:
                 name: creative-nodeport-service
                 port: 
                   number: 80
-    - host: halloween.devopseasylearning.net
+    - host: halloween.tclovis.com
       http:
         paths:
           - path: /
@@ -59,7 +59,7 @@ spec:
                 name: halloween-nodeport-service
                 port: 
                   number: 80
-    - host: phone.devopseasylearning.net
+    - host: phone.tclovis.com
       http:
         paths:
           - path: /
@@ -69,7 +69,7 @@ spec:
                 name: phone-nodeport-service
                 port: 
                   number: 80
-    - host: static.devopseasylearning.net
+    - host: static.tclovis.com
       http:
         paths:
           - path: /
@@ -79,7 +79,7 @@ spec:
                 name: static-nodeport-service
                 port: 
                   number: 80
-    - host: website.devopseasylearning.net
+    - host: website.tclovis.com
       http:
         paths:
           - path: /

@@ -10,6 +10,7 @@ resource "aws_instance" "example" {
     volume_type = "gp2"
     volume_size = 10
   }
+
   tags = merge(var.common_tags, {
     Name   = format("%s-%s-%s-bastion-host", var.common_tags["AssetID"], var.common_tags["Environment"], var.common_tags["Project"])
     },

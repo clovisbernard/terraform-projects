@@ -24,7 +24,7 @@ terraform {
 
 locals {
   aws_region              = "us-east-1"
-  control_plane_version   = "1.28"
+  control_plane_version   = "1.29"
   endpoint_private_access = false
   endpoint_public_access  = true
 

@@ -17,8 +17,8 @@ replicaCount: 1
 # "upsert-only", External DNS will only perform upsert operations, meaning it will add or update DNS records when necessary but will not delete them when the corresponding resources are removed.
 policy: sync
 
-nodeSelector: 
-  deployment_nodegroup: blue_green
+# nodeSelector: 
+#   deployment_nodegroup: blue_green
 
 serviceAccount:
   create: true

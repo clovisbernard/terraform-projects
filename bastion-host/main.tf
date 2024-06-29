@@ -13,20 +13,20 @@ terraform {
   }
 }
 
-terraform {
-  backend "s3" {
-    bucket         = "2560-dev-s4-state"
-    dynamodb_table = "2560-dev-s4-state-lock"
-    key            = "bastion-host/terraform.tfstate"
-    region         = "us-east-1"
-  }
-}
+# terraform {
+#   backend "s3" {
+#     bucket         = "2560-dev-s4-state"
+#     dynamodb_table = "2560-dev-s4-state-lock"
+#     key            = "bastion-host/terraform.tfstate"
+#     region         = "us-east-1"
+#   }
+# }
 
 locals {
   aws_region    = "us-east-1"
   ami           = "ami-0eb5c571bf15422ac"
   instance_type = "t2.micro"
-  key_name      = "s4"
+  key_name      = "prometheus"
   common_tags = {
     "AssetID"       = "2560"
     "AssetName"     = "Insfrastructure"

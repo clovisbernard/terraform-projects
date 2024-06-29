@@ -33,7 +33,7 @@ locals {
   disk_size            = "20"
   force_update_version = false
   instance_types       = ["t2.medium", "t2.medium"]
-  eks-version          = "1.28"
+  eks-version          = "1.29"
   label_name           = "guru"
 
 
