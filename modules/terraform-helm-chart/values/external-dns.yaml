@@ -22,8 +22,9 @@ policy: sync
 
 serviceAccount:
   create: true
-  name: ""
-  annotations: {}
+  name: external-dns-sa
+  annotations: 
+    eks.amazonaws.com/role-arn: arn:aws:iam::410052665018:role/2526-dev-alpha-external-dns-iam-role
 
 resources:
   ## Example:

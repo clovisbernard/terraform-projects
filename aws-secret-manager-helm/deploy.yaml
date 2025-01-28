@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: my-app
+spec:
+  selector:
+    matchLabels:
+      app: my-app
+  template:
+    metadata:
+      labels:
+        app: my-app
+    spec:
+      serviceAccountName: api-sa
+      containers:
+      - name: nginx
+        image: nginx
+        volumeMounts:
+          - name: db-creds
+            mountPath: /tmp
+      volumes:
+        - name: db-creds
+          csi:
+            driver: secrets-store.csi.x-k8s.io
+            readOnly: true
+            volumeAttributes:
+              secretProvidersClass: db-aws-secrets

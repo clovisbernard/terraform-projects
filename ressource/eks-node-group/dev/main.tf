@@ -30,10 +30,10 @@ locals {
   ec2_ssh_key          = "clo-key"
   ami_type             = "AL2_x86_64"
   capacity_type        = "ON_DEMAND"
-  disk_size            = "20"
+  disk_size            = "40"
   force_update_version = false
-  instance_types       = ["t2.medium", "t2.medium"]
-  eks-version          = "1.29"
+  instance_types       = ["t3.medium", "t3.medium"]
+  eks-version          = "1.31"
   label_name           = "guru"
 
 

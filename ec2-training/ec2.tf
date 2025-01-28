@@ -12,7 +12,7 @@ resource "aws_instance" "example" {
   }
 
   tags = merge(var.common_tags, {
-    Name   = format("%s-%s-%s-bastion-host", var.common_tags["AssetID"], var.common_tags["Environment"], var.common_tags["Project"])
+    Name   = format("%s-%s-%s", var.common_tags["AssetID"], var.common_tags["Environment"], var.common_tags["Project"])
     },
   )
 }

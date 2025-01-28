@@ -48,6 +48,13 @@ resource "aws_iam_policy" "aws-load-balancer-controller-polcy" {
         {
             "Effect": "Allow",
             "Action": [
+
+                "elasticloadbalancing:DescribeListenerAttributes",
+                "elasticloadbalancing:DescribeListeners",
+                "elasticloadbalancing:DescribeTargetGroups",
+                "elasticloadbalancing:DescribeTargetHealth",
+        
+
                 "ec2:DescribeAccountAttributes",
                 "ec2:DescribeAddresses",
                 "ec2:DescribeAvailabilityZones",
