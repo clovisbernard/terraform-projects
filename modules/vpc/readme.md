@@ -9,3 +9,5 @@ Create two route tables with destination 0.0.0.0/0 and NAT Gatways as target
 Create two route tables with destination 0.0.0.0/0 and internet Gateway as target
 Create two routes table association that associate each public subnet to each public subnet
 Create two routes table association that associate each private subnet to each private subnet
+
+--
